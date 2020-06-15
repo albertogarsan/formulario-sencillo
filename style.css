@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Poppins light';
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 400px;
+    margin: 150px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 20%;
+    font-family: 'Poppins medium';
+}
+
+.formulario .contenedor-inputs {
+    padding: 20px;
+    
+
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 100px;
+    background: #f2f2f2;
+    border: none;
+    box-shadow: inset 4px 4px 5px #a9a9a95e, 
+                inset -4px -4px 5px #ffffff;
+    font-family: 'Poppins light';
+    font-size: 14px; 
+    outline: none;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus { 
+    border: 2px solid #ffffff;
+}
+
+.formulario input[type="radio"] {
+    display: none;
+}
+
+.formulario .sexo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.formulario .label-radio {
+    border-radius: 100px;
+    padding: 10px 15px;
+    box-shadow:  3px 3px 5px #a9a9a95e, 
+                 -3px -3px 5px #ffffff;
+    text-align: center;
+    width: 20%;
+    margin: 0 20px;;
+    
+}
+
+.formulario input[type="radio"]:checked + .label-radio {
+    border-radius: 100px;
+    background: #f2f2f2;
+    box-shadow: inset 4px 4px 5px #a9a9a95e, 
+                inset -4px -4px 5px #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.formulario .terminos {
+    text-align: center;
+    color: #424242;
+}
+
+.formulario .terminos label {
+    margin-left: 10px;
+}
+
+.formulario .error {
+    display: none;
+    margin: 20px;
+    border-radius: 100 px;
+    box-shadow:  4px 4px 10px #a9a9a95e, 
+                 -4px -4px 10px #ffffff;
+    color: #ce1818;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.formulario .btn {
+    width: 100%;
+    text-align: center;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    border-radius: 100px;
+    background: #f2f2f2;
+    box-shadow:  3px 3px 5px #a9a9a95e, 
+                 -3px -3px 5px #ffffff;
+}
+
+.formulario .btn:hover { 
+    border-radius: 100px;
+    background: #f2f2f2;
+    box-shadow: inset 3px 3px 5px #cecece, 
+            inset 3px 3px 5px #ffffff;
+    outline: none;
+    border: 2px solid #ffffff;
+}

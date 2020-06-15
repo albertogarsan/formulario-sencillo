@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        
+        <h1>Sign in</h1>
+        
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <div class="contenedor-inputs">
+                    <!-- nombre-->
+                    <input type="text" placeholder="Nombre:" maxlength=”19”  name="nombre">
+                    <!-- correo -->
+                    <input type="email" placeholder="Correo:" maxlength=""  name="correo">
+                
+                    <div class="sexo">
+                        <!-- genero  -->
+                        <input type="radio" name="genero" value="hombre" id="hombre">
+                            <label class="label-radio" for="hombre"><i class="fas fa-male"></i></label>
+                        <input type="radio" name="genero" value="mujer" id="mujer">
+                            <label class="label-radio" for="mujer"><i class="fas fa-female"></i></label>
+                    </div>
+
+                    <div class="terminos">
+                        <!--terminos-->
+                        <input type="checkbox" name="terminos" id="terminos">
+                            <label for="terminos">Términos y condiciones</label>
+                    </div>
+
+                        <!--mensaje de error-->
+                    <ul class="error" id="error">
+                        
+                    </ul>
+            </div>
+                <!--boton de registrase-->
+            <input type="submit" value="Registrarte" class="btn">
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
